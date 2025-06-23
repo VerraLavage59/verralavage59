@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nettoyage Auto Pro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1565c0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .tarifs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nettoyage Auto Pro</h1>
+  <p>Votre voiture comme neuve, où que vous soyez !</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#tarifs">Tarifs</a>
+  <a href="#about">À propos</a>
+  <a href="#contact">Contact</a>
+  <a href="#reservation">Réservation</a>
+</nav>
+
+<section id="services">
+  <h2>Nos Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Nettoyage intérieur</h3>
+      <p>Aspiration complète, nettoyage des plastiques, vitres et tapis.</p>
+    </div>
+    <div class="card">
+      <h3>Nettoyage extérieur</h3>
+      <p>Lavage haute pression, jantes, carrosserie, cire protectrice.</p>
+    </div>
+    <div class="card">
+      <h3>Formule complète</h3>
+      <p>Intérieur + extérieur, pour un résultat comme neuf.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs">
+  <h2>Tarifs</h2>
+  <div class="tarifs">
+    <div class="card">
+      <h3>Intérieur</h3>
+      <p>À partir de 30 €</p>
+    </div>
+    <div class="card">
+      <h3>Extérieur</h3>
+      <p>À partir de 25 €</p>
+    </div>
+    <div class="card">
+      <h3>Complet</h3>
+      <p>À partir de 50 €</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>À propos de nous</h2>
+  <p>Nous sommes une équipe de passionnés de l’automobile, spécialisés dans le nettoyage auto à domicile ou en centre. Nous utilisons des produits écologiques et des techniques professionnelles pour garantir un résultat impeccable.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 Téléphone : 06 00 00 00 00</p>
+  <p>📧 Email : contact@nettoyageautopro.fr</p>
+  <p>📍 Adresse : 123 rue de la propreté, 75000 Paris</p>
+</section>
+
+<section id="reservation">
+  <h2>Réservation</h2>
+  <form action="#" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telephone">Téléphone :</label>
+    <input type="tel" id="telephone" name="telephone" required>
+
+    <label for="date">Date :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="heure">Heure (entre 8h et 19h) :</label>
+    <input type="time" id="heure" name="heure" min="08:00" max="19:00" required>
+
+    <label for="service">Type de service :</label>
+    <select id="service" name="service" required>
+      <option value="interieur">Nettoyage intérieur</option>
+      <option value="exterieur">Nettoyage extérieur</option>
+      <option value="complet">Formule complète</option>
+    </select>
+
+    <button type="submit">Réserver</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Nettoyage Auto Pro – Tous droits réservés.
+</footer>
+
+</body>
+</html>
